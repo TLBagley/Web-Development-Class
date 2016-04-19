@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <script type="text/Javascript" src = "JS/functions.js">
+  </script>
+</head>
 <body>
 
 <h2>Send e-mail to TLBagley@Gmail.com:</h2>
 
-<form action="MAILTO:TLBagley@Gmail.com" method="post" enctype="text/plain">
+<form onsubmit="SendSubmitContactForm(); return false;">
 Name:<br>
-<input type="text" name="name" value="your name"><br>
+<input type="text" name="name" value="your name" id = "name"><br>
 E-mail:<br>
-<input type="text" name="mail" value="your email"><br>
+<input type="text" name="mail" value="yours@example.com" id = "mail"><br>
 Comment:<br>
-<input type="text" name="comment" value="your comment" size="50"><br><br>
-<input type="submit" value="Send">
+<input type="text" name="comment" value="your comment" id = "comment" size="50"><br><br>
+<input type="submit" value = "submit">
 <input type="reset" value="Reset">
 </form>
 
